@@ -42,33 +42,38 @@ Each song contains the following data fields.
 
 * songs can be search based on following fields(fillter all the results)
 
-1. title >Eg:ජගන් මෝහිනී //result songs which includes this lyrics
-2. lyric >Eg:චාරු දේහේ නුරා //result songs which includes this lyrics
-3. music >Eg:ජයන්ත ගමගේ සංගීතමය ගීත //result all songs he contributes
-4. artist >Eg:ක්ලැරන්ස් විජේවර්ධන ගයන ගීත //result all songs he contributes 
-5. writer >Eg:කරුණාරත්න අබේසේකර ලියූ ගීත// result all songs he contributes
+1. title -result songs which includes this lyrics
+>Eg:ජගන් මෝහිනී 
+2. lyric  -result songs which includes this lyrics
+>Eg:චාරු දේහේ නුරා
+3. music  -result all songs he contributes
+>Eg:ජයන්ත ගමගේ සංගීතමය ගීත
+4. artist  -result all songs he contributes 
+>Eg:ක්ලැරන්ස් විජේවර්ධන ගයන ගීත
+5. writer -result all songs he contributes
+>Eg:කරුණාරත්න අබේසේකර ලියූ ගීත
 
 * songs can search on definite range
  >Eg:ඇන්ජලින් ගුණතිලක ගයන ගීත 7
 
 * Most popular songs can search
- >Eg:ඇන්ජලින් ගුණතිලක ගයන ගීත හොදම 7
+ >Eg:ඇන්ජලින් ගුණතිලක ගයන ගීත හොදම 7<br>
  (The search result is sorted based on the visits value per each song and the best 7 songs are returned )
  
 * Search phrases support synonyms of the keywords
-  >Eg:Presence of any word out of'කීව', 'කී', 'ගායනා කරන', 'ගයන', 'ගායනා', 'හඩින්', 'කියනා 
+  >Eg:Presence of any word out of'කීව', 'කී', 'ගායනා කරන', 'ගයන', 'ගායනා', 'හඩින්', 'කියනා <br>
   identifies the search as a search for an artist.
 
 ## Indexing and Querying Techniques
 
 ### Boosting
-Boosting has been used as the main query optimization technique. Each field of a search is boosted based on the field which user search.
->Eg:ක්ලැරන්ස් විජේවර්ධන ගයන ගීත 
+Boosting has been used as the main query optimization technique. Each field of a search is boosted based on the field which user search.<br>
+>Eg:ක්ලැරන්ස් විජේවර්ධන ගයන ගීත <br>
 boost the artist field by a certain value. 
 
 ### Rule Based Classification
-classify user search into different search queries and apply different rules for getting result.
->Eg:if the input contains හොදම 7
+classify user search into different search queries and apply different rules for getting result.<br>
+>Eg:if the input contains හොදම 7<br>
 apply range query and filter 7 result based on visits value.
 
 
