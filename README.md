@@ -46,11 +46,11 @@ Each song contains the following data fields.
 >Eg:ජගන් මෝහිනී 
 2. lyric  -result songs which includes this lyrics
 >Eg:චාරු දේහේ නුරා
-3. music  -result all songs he contributes
+3. music  -result all songs a musician contributes
 >Eg:ජයන්ත ගමගේ සංගීතමය ගීත
-4. artist  -result all songs he contributes 
+4. artist  -result all songs an artist contributes 
 >Eg:ක්ලැරන්ස් විජේවර්ධන ගයන ගීත
-5. writer -result all songs he contributes
+5. writer -result all songs a writer contributes
 >Eg:කරුණාරත්න අබේසේකර ලියූ ගීත
 
 * songs can search on definite range
